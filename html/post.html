@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/post.js"></script>
+    <link rel="stylesheet" href="../CSS/bloglist.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/post.css">
+  
+
+</head>
+<body class="blogbody" style="background-color: white;">
+    
+ 
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"  class="btn btn-primary" id="exampleModal">Sign In</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h4 style="text-align: center; font-size: 40px">Welcome Back!</h4>
+      <!--<p>Please fill in this form to create an account.</p>-->
+      <hr>
+      <label for="email"><b>Email address</b></label>
+      <input id="exampleInputEmail1" type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="exampleInputPassword1" type="password" placeholder="Password" name="psw" required>
+
+      <!--<label for="psw-repeat"><b>Repeat Password</b></label>-->
+      <!--<input type="password" placeholder="Repeat Password" name="psw-repeat" required>-->
+      
+      <!-- <label>
+        <input id="exampleCheck1" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label> -->
+
+      <!--<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
+
+      <div class="clearfix">
+          <button id="Sign In" type="submit" class="btn btn-primary" style="background-color: #4caf50">Sign In</button>
+        <!-- <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-secondary">Close</button> -->
+        
+      </div>
+    </div>
+  </form>
+</div>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" id="exampleModalSignUp" class="btn btn-primary">Sign Up</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h4 style="text-align: center; font-size: 40px">Get Started</h4>
+      <!--<p>Please fill in this form to create an account.</p>-->
+      <hr>
+      <label for="email"><b>Enter your name</b></label>
+      <input id="exampleInputName1" type="text" placeholder="Enter Name" name="email" required>
+      
+      <label for="email"><b>Enter your Email address</b></label>
+      <input id="exampleInputEmail1" type="text" placeholder="Enter Email" name="email" required>
+      
+      <label for="psw"><b>Enter a Password</b></label>
+      <input id="exampleInputPassword1" type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input id="exampleInputPassword2" type="password" placeholder="Re-enter Password" name="psw-repeat" required>
+      
+      <!-- <label>
+        <input id="exampleCheck" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember Me
+      </label> -->
+
+      <!--<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
+
+      <div class="clearfix">
+          <button id="Sign Up" type="submit" class="btn btn-primary" style="background-color: #4caf50">Sign Up</button>
+        <!-- <button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn btn-secondary">Close</button> -->
+        
+      </div>
+    </div>
+  </form>
+</div>
+ </div>
+      <a  class="logo-title" style="color: #0000ff;">Scribbler</a>
+      <p class="middleText" style="color: black;">Explore,  Imagine,  Create</p>
+    </div>
+    <div class="he">JIMI</div>
+    <div class="midpara">
+      <!-- <p>Jimi</p> -->
+      <h4>The legacy of jimi handrix</h4>
+    </div>
+    <div class="editbtn">
+        <button style="background-color: #ec4f5c; color:white;" onclick="edit()" id="savebtn">edit</button>
+      <i class="fa fa-solid fa-floppy-disk"></i>
+    </div>
+    <!-- <div class="editbtnn">
+        <button style="background-color: #ec4f5c; color:white; visibility:hidden;" >save</button>
+       <i class="fa-solid fa-floppy-disk"></i>
+    </div> -->
+
+    <div class="paraun" id="paraedit">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti assumenda maiores, 
+      alias voluptatum hic placeat voluptatem quos! Laudantium, perferendis! Repellat sequi
+      recusandae dolores rem! Deserunt amet nemo vero id sit explicabo possimus esse! Eligendi, possimus.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti assumenda maiores, 
+      alias voluptatum hic placeat voluptatem quos! Laudantium, perferendis! Repellat sequi
+      recusandae dolores rem! Deserunt amet nemo vero id sit explicabo possimus esse! Eligendi, possimus.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti assumenda maiores, 
+      alias voluptatum hic placeat voluptatem quos! Laudantium, perferendis! Repellat sequi
+      recusandae dolores rem! Deserunt amet nemo vero id sit explicabo possimus esse! Eligendi, possimus.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti assumenda maiores, 
+      alias voluptatum hic placeat voluptatem quos! Laudantium, perferendis! Repellat sequi
+      recusandae dolores rem! Deserunt amet nemo vero id sit explicabo possimus esse! Eligendi, possimus.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti assumenda maiores, 
+      alias voluptatum hic placeat voluptatem quos! Laudantium, perferendis! Repellat sequi
+      recusandae dolores rem! Deserunt amet nemo vero id sit explicabo possimus esse! Eligendi, possimus.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti assumenda maiores, 
+      alias voluptatum hic placeat voluptatem quos! Laudantium, perferendis! Repellat sequi
+      recusandae dolores rem! Deserunt amet nemo vero id sit explicabo possimus esse! Eligendi, possimus.
+    </div>
+
+    <div class="likebn">
+      <button class="lkbn" style="background-color: #ec4f5c;" onclick="likee()" >
+        <span><div>
+        <i class="fa-solid fa-thumbs-up lk"></i>
+        </div>
+        <div id="lkbnn">Like</div></span></button>
+      <p id="likepara">Be the first one to like!</p>
+    </div>
+
+
+
+    <div class="commentdiv">
+      <div>
+        <!-- <p><label for="w3review">Review of W3Schools:</label></p> -->
+        
+        <textarea id="w3review" name="w3review" rows="4" cols="100">ophio</textarea>
+        <br>
+        <button style="background-color: #ec4f5c;"  class="cmbn" onclick="addp()">Comment</button>
+      </div>
+    </div>
+
+    <div id="lsbox">
+      <h5 id="forpara">All Comments</h5>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+
+     
+
+    </script>
+</body>
+</html>

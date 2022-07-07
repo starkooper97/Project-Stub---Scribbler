@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+
+      input[type="text"]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+
+      button:hover {
+        opacity: 1;
+      }
+
+      .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+      }
+
+      .cancelbtn,
+      .signupbtn {
+        float: left;
+        width: 50%;
+      }
+
+      .container {
+        padding: 16px;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #474e5d;
+        padding-top: 50px;
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 80%;
+      }
+
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+
+      .close {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #f44336;
+        cursor: pointer;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      @media screen and (max-width: 300px) {
+        .cancelbtn,
+        .signupbtn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button
+      onclick="document.getElementById('id02').style.display='block'"
+      style="width: auto"
+      id="exampleModalSignUp"
+      class="btn btn-primary"
+    >
+      Sign Up
+    </button> -->
+
+    <div>
+      <!-- <span
+        onclick="document.getElementById('id02').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      > -->
+      <form class="modal-content">
+        <div class="container">
+          <h3 style="text-align: center; font-size: 35px">Pen Your Post</h3>
+          <!--<p>Please fill in this form to create an account.</p>-->
+          <hr />
+          <label for="email"><b>Title:</b></label>
+          <input id="exampleInputName1" type="text" name="email" required />
+          <!-- 
+          <label for="email"></label>
+          <input
+            id="exampleInputEmail1"
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            required
+          />
+
+          <label for="psw"><b>Enter a Password</b></label>
+          <input
+            id="exampleInputPassword1"
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />-->
+
+          <label for="psw-repeat"><b>Content:</b></label>
+          <input
+            id="exampleInputPassword2"
+            type="password"
+            name="psw-repeat"
+            style="height: 500px; width: 100%"
+            required
+          />
+          <!-- <textarea
+            id="w3review"
+            name="w3review"
+            rows="40"
+            cols="100"
+          ></textarea> -->
+          <!-- 
+          <label>
+            <input
+              id="exampleCheck"
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Remember Me
+          </label> -->
+
+          <!--<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>-->
+
+          <div class="clearfix" style="text-align: center">
+            <button
+              id="Sign Up"
+              type="submit"
+              class="btn btn-primary"
+              style="background-color: #4caf50; margin-top: 7px"
+            >
+              Create
+            </button>
+            <!-- <button
+              type="button"
+              onclick="document.getElementById('id02').style.display='none'"
+              class="btn btn-secondary"
+            >
+              Close
+            </button> -->
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
